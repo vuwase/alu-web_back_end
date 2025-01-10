@@ -1,24 +1,20 @@
 #!/usr/bin/env python3
+
 """
-importing the Callable module from the typing module
+Write a type-annotated function make_multiplier
 """
+
 from typing import Callable
-"""
-a function that takes a float multiplier as argument
-and returns a function
-"""
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
-    a function that takes a float multiplier as argument
+    Function that takes a float multiplier as argument
+    returns a function that multiplies a float by multiplier.
     """
-    def multiply(num: float) -> float:
-        """
-        returns the product of num and multiplier
-        """
-        return num * multiplier
-    """
-    returns the product of num and multiplier
-    """
-    return multiply
+
+    def fn(n: float) -> float:
+        """Multiply a float by a multiplier"""
+        return n * multiplier
+
+    return fn

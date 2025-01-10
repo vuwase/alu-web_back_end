@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 """
-import the List and Union classes from the typing module
-
+Complex types - mixed list
 """
 from typing import List, Union
-"""
-Function that takes in a list of integers
- and floats and returns the sum as a float
-"""
 
 
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     """
-    return the sum of the list
+    A function that takes a list of integers and floats,
+    and returns their sum as a float
     """
     return sum(mxd_lst)
+
+# ...

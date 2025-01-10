@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-""" 0. Basic annotations - add
+
+"""
+Basic annotations: concat
 """
 
 
-def add(a: float, b: float) -> float:
-    """ Adds two float number numbers together.
+def concat(str1: str, str2: str) -> str:
     """
-    return a + b
+    Concatenates two strings and returns the result
+    """
+    return str1 + str2
+
+# Ajout d'un saut de ligne à la fin du fichier
